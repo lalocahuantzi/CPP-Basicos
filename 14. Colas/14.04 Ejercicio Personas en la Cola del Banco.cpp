@@ -2,8 +2,6 @@
 y por último muestre los clientes en el orden correcto.*/
 
 #include <iostream>
-#include <conio.h>
-#include <stdlib.h>
 #include <string>
 #include <limits>
 using namespace std;
@@ -37,9 +35,9 @@ int main(){
 
         cout<<"\nDesea agregar un nuevo cliente(s/n): ";  // Preguntamos al usuario si desea agregar otro cliente a la cola
         cin>>rpt;
-    }while(rpt == 'S' || rpt == 's'); // Mientras el usuario responsa con 'S'||'s' seguimos agregando elementos a la pila
+    }while(rpt == 'S' || rpt == 's'); // Mientras el usuario responda con 'S'||'s' seguimos agregando elementos a la cola
 
-    cout<<"\n===Carga de cliente existosa===\n\n";
+    cout<<"\n===Carga de cliente exitosa===\n\n";
 
     cout<<"\tClientes agregados a cola:\n\n";
     while(frente != NULL){ // Mientras la cola no esté vacía
@@ -86,7 +84,7 @@ bool cola_vacia(Nodo *frente){ // Función para determinar si la cola está vac�
 }
 
 void suprimirCola(Nodo *&frente,Nodo *&fin, Cliente &c){ // Función que elimina el primer cliente de la cola
-    c = frente->c;
+    c = frente->c; // Guardamos los datos del cliente del frente en la variable 'c'
 
     Nodo *aux = frente; // Creamos un nodo auxiliar que apunta al frente actual (nodo a eliminar)
 

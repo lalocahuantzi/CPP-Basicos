@@ -17,7 +17,7 @@ struct Alumno{ // Iniciamos la estructura Alumno
 
 int main(){
     float mayor = alumnos[0].promedio; // Declaramos la variable auxiliar para almacenar el mayor promedio
-    int pos = 0; // Declaramos la variable dónde almacenaremos la posición del alumno con mejor promedio
+    int pos = 0; // Declaramos la variable donde almacenaremos la posición del alumno con mejor promedio
 
     for(int i=0;i<3;i++){
         // Capturamos la cadena de texto para el campo nombre de la estructura Alumno
